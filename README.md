@@ -1,3 +1,3 @@
 MySettings
 
-类似于tab的滑动切换settings
+tab settings
