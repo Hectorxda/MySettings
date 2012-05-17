@@ -17,6 +17,8 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.preference.PreferenceManager;
 
 public class Settings2 extends ActivityGroup implements OnClickListener {
@@ -47,17 +49,26 @@ public class Settings2 extends ActivityGroup implements OnClickListener {
             super.handleMessage(msg);
             switch (msg.what) {
             case FIRST_VIEW:
+                mFirstButton.setTextColor(Color.rgb(64, 224, 208));
+                mSecondButton.setTextColor(Color.WHITE);
+                mThirdButton.setTextColor(Color.WHITE);
                 mFirstButton.setSelected(true);
                 mSecondButton.setSelected(false);
                 mThirdButton.setSelected(false);
                 break;
             case SECOND_VIEW:
+                mFirstButton.setTextColor(Color.WHITE);
+                mSecondButton.setTextColor(Color.rgb(64, 224, 208));
+                mThirdButton.setTextColor(Color.WHITE);
                 mFirstButton.setSelected(false);
                 mSecondButton.setSelected(true);
                 mThirdButton.setSelected(false);
                 break;
 
             case THIRD_VIEW:
+                mFirstButton.setTextColor(Color.WHITE);
+                mSecondButton.setTextColor(Color.WHITE);
+                mThirdButton.setTextColor(Color.rgb(64, 224, 208));
                 mFirstButton.setSelected(false);
                 mSecondButton.setSelected(false);
                 mThirdButton.setSelected(true);
@@ -113,7 +124,7 @@ public class Settings2 extends ActivityGroup implements OnClickListener {
 
         Intent thirdIntent = new Intent();
         thirdIntent.setClassName("com.cyanogenmod.cmparts",
-                "com.cyanogenmod.cmparts.activities.MainActivity");
+                "com.cyanogenmod.cmparts.activities.MyExtraToolsActivity");
         mThirdView = activityToView(this, thirdIntent, THIRD_INTENT_TAG);
         mThirdView.setTag(THIRD_INTENT_TAG);
         mRoot.addView(mThirdView);
@@ -157,6 +168,9 @@ public class Settings2 extends ActivityGroup implements OnClickListener {
             index = mRoot.indexOfChild(mFirstView);
 
             mRoot.snapToScreen(index);
+            mFirstButton.setTextColor(Color.rgb(64, 224, 208));
+            mSecondButton.setTextColor(Color.WHITE);
+            mThirdButton.setTextColor(Color.WHITE);
             mFirstButton.setSelected(true);
             mSecondButton.setSelected(false);
             mThirdButton.setSelected(false);
@@ -166,6 +180,9 @@ public class Settings2 extends ActivityGroup implements OnClickListener {
             index = mRoot.indexOfChild(mSecondView);
 
             mRoot.snapToScreen(index);
+            mFirstButton.setTextColor(Color.WHITE);
+            mSecondButton.setTextColor(Color.rgb(64, 224, 208));
+            mThirdButton.setTextColor(Color.WHITE);
             mFirstButton.setSelected(false);
             mSecondButton.setSelected(true);
             mThirdButton.setSelected(false);
@@ -174,6 +191,9 @@ public class Settings2 extends ActivityGroup implements OnClickListener {
             index = mRoot.indexOfChild(mThirdView);
 
             mRoot.snapToScreen(index);
+            mFirstButton.setTextColor(Color.WHITE);
+            mSecondButton.setTextColor(Color.WHITE);
+            mThirdButton.setTextColor(Color.rgb(64, 224, 208));
             mFirstButton.setSelected(false);
             mSecondButton.setSelected(false);
             mThirdButton.setSelected(true);

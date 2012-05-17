@@ -1457,7 +1457,7 @@
     <!-- Unlock finger settings screen, change unlock finger screen countdown hint on bottom of screen when the screen is locked out -->
     <string name="lockfinger_lockout_countdown_footer">请在 %d 秒内重试。</string>
     <!-- settings 2 for hectorxda -->
-    <string name="system_settings2_title">默认设置</string>
-    <string name="cm_settings2_title">cm设置</string>
-    <string name="my_settings2_title">个人工具</string>
+    <string name="system_settings2_title">系统设置</string>
+    <string name="cm_settings2_title">CM设置</string>
+    <string name="my_settings2_title">个人增强</string>
 </resources>

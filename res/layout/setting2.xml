@@ -18,25 +18,39 @@
             android:textColor="#ffffff"
             android:gravity="center"
             android:text="@string/system_settings2_title"
+            android:background="#3C3C3C"
             android:textSize="20sp" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/settings2_divider" />
 
         <TextView
             android:id="@+id/second_button"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:gravity="center"
             android:text="@string/cm_settings2_title"
+            android:background="#3C3C3C"
             android:textSize="20sp" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/settings2_divider" />
+        
         <TextView
             android:id="@+id/third_button"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:gravity="center"
             android:text="@string/my_settings2_title"
+            android:background="#3C3C3C"
             android:textSize="20sp" />
 
     </LinearLayout>

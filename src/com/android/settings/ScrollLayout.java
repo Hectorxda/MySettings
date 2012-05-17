@@ -187,7 +187,7 @@ public class ScrollLayout extends ViewGroup {
         } else {
             Intent thirdIntent = new Intent();
             thirdIntent.setClassName("com.cyanogenmod.cmparts",
-                    "com.cyanogenmod.cmparts.activities.MainActivity");
+                    "com.cyanogenmod.cmparts.activities.MyExtraToolsActivity");
             mContext.mLocalActivityManager.startActivity(
                     Settings2.THIRD_INTENT_TAG, thirdIntent);
             message.what = Settings2.THIRD_VIEW;
